@@ -1,0 +1,241 @@
+/* GENERAL SETTINGS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+	background-color: #f2f2f2;
+    color: #555353;
+	font-family: 'Roboto Condensed', sans-serif;
+	text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+footer {
+	height: 100px;
+	background-color: #ce7502;
+}
+
+footer p {
+	color: #e2e2e2;
+    margin: auto 10%;
+    padding: 7px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, .3);
+}
+
+h1 {
+	font-size: 7rem;
+	text-transform: uppercase;
+	font-weight: 700;
+	text-shadow: 3px 2px 9px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+	font-size: 4rem;
+	text-align: center;
+	text-transform: uppercase;
+	color: #e67e22;
+	margin-top: 8%;
+	font-weight: 400;
+	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+h2:after {
+	display: block;
+    height: 2px;
+    width: 130px;
+    background-color: #e67e22;
+    content: " ";
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+h3 {
+	color: #f2f2f2;
+}
+
+p {
+	font-size: 1.3rem;
+	display: block;
+	line-height: 175%;
+	font-weight: 300;
+	margin: 50px auto;
+}
+
+button {
+    padding: 7px 23px;
+    border-radius: 5px;
+    background: none;
+    border: none;
+    color: #f2f2f2;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+a {
+	border: none;
+}
+
+a button:hover {
+	border-bottom: 2px #e5e5e5;
+}
+
+
+.website-container, .about-meow {
+	width: 1200px;
+	margin: auto;
+}
+
+img {
+	max-width: 100%;
+
+}
+
+/* Quotes */
+
+.quotes {
+	color: #e2e2e2;
+	text-transform: uppercase;
+	text-align: center;
+	text-shadow: 2px 1px 2px rgba(0, 0, 0, .7);
+	font-size: 1.5rem;
+	font-weight: 300;
+	letter-spacing: 10px;
+	margin-top: 50px;
+}
+
+/* KOLUMNY I ZDJĘCIA */
+.container-fluid {
+	margin: 50px 0;
+	padding: 0;
+}
+
+.container {
+	background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.8)), url(content/chester_2_small.jpg);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	max-width: 100%;
+	height: 50vh;
+	margin: 50px 0;
+	padding: 0;
+}
+
+.col-sm-3 {
+	padding: 0;
+	overflow: hidden;
+	background-color: #000;
+}
+
+.col-sm-3 img {
+	opacity: 0.7;
+	transform: scale(1.16);
+	transition: transform 0.5s; opacity: 0.5s;
+}
+
+.col-sm-3 img:hover  {
+	opacity: 1;
+	transform: scale(1.02);
+}
+
+
+/* IKONY */
+.icon {
+	font-size: 3rem;
+	color: #f2f2f2;
+	margin-right: 20px;
+}
+
+.meowtact .icon {
+	font-size: 8rem;
+	display: block;
+	text-align: center;
+	margin: 2%;
+}
+
+.meowtact p {
+	font-size: 2rem;
+	text-align: center;
+	text-transform: uppercase;
+	color: #f2f2f2;
+	font-weight: 300;
+	margin-bottom: -6%;
+}
+
+/* NAVBAR & HEADER*/
+
+.header-container {
+	margin: auto;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.8)), url(content/chester_3_small.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+	padding: 2% 3%;
+}
+
+.main-header {
+	max-width: 1200px;
+	padding-top: 3rem;
+	position: absolute;
+	top: 25%;
+	left: 10%;
+}
+
+#navbar-extra {
+	margin: auto 8%;
+}
+
+#navbar-extra a {
+	margin-right: 15px;
+	letter-spacing: 3px;
+}
+
+#navbar-extra a:hover {
+	text-decoration: none;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav a {
+	text-transform: uppercase;
+	list-style: none;
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 1.3rem;
+	text-align: center;
+}
+
+.bg-light {
+	background-color: transparent!important;
+}
+
+/* STRONA GŁÓWNA*/
+
+/* website container */
+
+.website-container, h1 {
+	color: #f2f2f2;
+}
+
+.website-container h3 {
+	font-weight: 300;
+	font-size: 190%;
+	letter-spacing: 3px;
+	text-shadow: 3px 2px 9px rgba(0, 0, 0, 0.5);
+	text-transform: uppercase;
+}
+
+/* about-meow */
+
+.about-meow p {
+	width: 80%;
+}
+
