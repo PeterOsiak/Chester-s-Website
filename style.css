@@ -1,17 +1,28 @@
-/* GENERAL SETTINGS */
+/***** GENERAL SETTINGS ****/
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+/*
+*:active {
+    outline: none;
+    
+}*/
 
 body, html {
 	background-color: #f2f2f2;
-    color: #555353;
+    color: #303030;
 	font-family: 'Roboto Condensed', sans-serif;
 	text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
+
+.container {
+    margin: 50px auto;
+}
+
 
 footer {
 	height: 100px;
@@ -35,12 +46,13 @@ h1 {
 
 h2 {
 	font-size: 4rem;
+    letter-spacing: 8px;
 	text-align: center;
 	text-transform: uppercase;
 	color: #e67e22;
-	margin-top: 8%;
+	margin-top: 7%;
 	font-weight: 400;
-	text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+	text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 h2:after {
@@ -65,33 +77,66 @@ p {
 	margin: 50px auto;
 }
 
-button {
-    padding: 7px 23px;
-    border-radius: 5px;
-    background: none;
-    border: none;
-    color: #f2f2f2;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+
+.row {
+    max-width: 80%;
+    margin: auto;
+    text-align: center;
 }
+
+/**** BUTTONS & LINKS ****/
 
 a {
-	border: none;
+    text-decoration: none;
+    color: #fff;
 }
+
+a:hover {
+    text-decoration: none;
+    color: #e67e22;
+    transition: .3s;
+}
+
+a button {
+    padding: 7px 23px;
+    background: none;
+    border: none;
+    color: #f2f2f2; 
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+
+a button:focus {
+    outline: none;
+}
+
+a button:link {
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.5s, color 0.5s;
+}
+
+
+a button:visited {
+    color: #e67e22;
+    border-bottom: 1px solid #e67e22;
+    transition: border-bottom 0.5s, color 0.5s;
+} 
+
 
 a button:hover {
-	border-bottom: 2px #e5e5e5;
+    color: #e67e22;
+    transition: .5s;
 }
 
+a button:active {
+    color: solid red;
+    border-bottom: none;
+}
 
-.website-container, .about-meow {
-	width: 1200px;
+.website-container {
 	margin: auto;
-}
-
-img {
-	max-width: 100%;
-
 }
 
 /* Quotes */
@@ -100,26 +145,27 @@ img {
 	color: #e2e2e2;
 	text-transform: uppercase;
 	text-align: center;
-	text-shadow: 2px 1px 2px rgba(0, 0, 0, .7);
+	text-shadow: 2px 1px 2px rgba(0, 0, 0, .8);
 	font-size: 1.5rem;
 	font-weight: 300;
 	letter-spacing: 10px;
 	margin-top: 50px;
 }
 
-/* KOLUMNY I ZDJĘCIA */
+/**** COLUMNS & PICTURES ****/
+
 .container-fluid {
 	margin: 50px 0;
 	padding: 0;
 }
 
-.container {
-	background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.8)), url(content/chester_2_small.jpg);
+.meowtact-channels {
+	background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.8)), url(content/chester/chester_2_small.jpg);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 	max-width: 100%;
-	height: 50vh;
+	height: 450px;
 	margin: 50px 0;
 	padding: 0;
 }
@@ -127,33 +173,43 @@ img {
 .col-sm-3 {
 	padding: 0;
 	overflow: hidden;
-	background-color: #000;
 }
 
-.col-sm-3 img {
-	opacity: 0.7;
+.img-fluid {
+	opacity: 0.75;
 	transform: scale(1.16);
 	transition: transform 0.5s; opacity: 0.5s;
 }
 
-.col-sm-3 img:hover  {
+.img-fluid:hover  {
 	opacity: 1;
 	transform: scale(1.02);
 }
 
+/**** ICONS ****/
 
-/* IKONY */
 .icon {
-	font-size: 3rem;
+	font-size: 2rem;
 	color: #f2f2f2;
-	margin-right: 20px;
+	margin-right: 5px!important;
 }
 
 .meowtact .icon {
-	font-size: 8rem;
+	font-size: 7rem;
 	display: block;
 	text-align: center;
-	margin: 2%;
+    opacity: 0.9;
+    transition-duration: .5s;
+}
+
+.meowtact .icon:hover {
+	font-size: 8rem;
+    color: #e67e22;
+	display: block;
+	text-align: center;
+	/*margin: 2%; */
+    opacity: 1;
+    transition-delay: transform 0.4s; opacity: 0.4s;
 }
 
 .meowtact p {
@@ -162,15 +218,14 @@ img {
 	text-transform: uppercase;
 	color: #f2f2f2;
 	font-weight: 300;
-	margin-bottom: -6%;
 }
 
-/* NAVBAR & HEADER*/
+/**** NAVBAR & HEADER ****/
 
 .header-container {
 	margin: auto;
 	height: 100vh;
-	background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.8)), url(content/chester_3_small.jpg);
+	background-image: linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.8)), url(content/chester/chester_3_small.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
@@ -217,7 +272,7 @@ nav a {
 	background-color: transparent!important;
 }
 
-/* STRONA GŁÓWNA*/
+/**** MAIN PAGE ****/
 
 /* website container */
 
@@ -238,4 +293,179 @@ nav a {
 .about-meow p {
 	width: 80%;
 }
+
+/* meow me */
+
+.meow-me .row {
+    max-width: 100%;
+}
+
+/* meowtact */
+
+.meowtact .meowtact-data {
+	font-size: 20px;
+    text-shadow: 2px 2px 2px rgba(0,0,0, .6);
+	text-align: center;
+	text-transform: uppercase;
+	color: #f2f2f2;
+	font-weight: 400;
+    line-height: 0;
+}
+
+.ion-ios-at {
+    line-height: 0;
+}
+
+/* credentials / meowdentials */
+
+.meowdentials .col-sm-3 {
+    height: 300px;
+    max-width: 210px;
+    background-image:linear-gradient(rgba(0, 0, 0, .75), rgba(0, 0, 0, 0.8));
+    margin: auto;
+}
+
+.meowdentials .row {
+    max-width: 100%;
+   
+   
+}
+
+/**** HOVER EFFECT ****/
+
+.meowdentials .box-1 {
+    transform: scale(1);
+    background-color: #3c557e;    
+    border-radius: 3px;
+    overflow: hidden;
+    box-shadow: 2px 2px 8px rgba(0,0,0,.5);
+   
+}
+
+.meowdentials .row img {
+    color: #fff;
+    height: 100%;
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: -50px;
+}
+
+/* overlay effect */
+
+.overlay {
+    background-color: #1c2e4c;
+    position: absolute;
+/*    top: 0;*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    overflow: hidden;
+    transition: .6s;
+}
+
+.box-1:hover {
+    transform: scale(1.1) rotate(-3deg);
+    transition: .6s;
+    box-shadow: 3px 3px 10px rgba(0,0,0,.5);
+}
+
+.box-1:hover .overlay {
+    width: 100%;
+    opacity: 0.85;
+   
+}
+
+.text {
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #f2f2f2;
+    font-weight: 700;
+    
+}
+
+.review {
+    white-space: normal;
+    font-size: 14px;
+    font-weight: 700
+}
+
+
+/**** CSS SPRITES ****/
+/*
+
+ fur power 
+
+.sprite-sherlock, .sprite-kazimierz {
+    align-content: center;
+    height: 350px;
+    max-width: 350px;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-shadow: 4px 5px 13px rgba(0, 0, 0, .5);
+    margin: auto;
+}
+
+
+.sprite-sherlock {
+    background-image: url(Content/Sprites/sherlock.jpg);
+    background-position: -65px -65px;
+}
+
+.sprite-sherlock:hover {
+    background-image: url(Content/Sprites/sherlock.jpg);
+    background-position: -550px -65px;
+}
+
+#sherlock {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.7rem;
+    text-shadow: 3px 2px 9px rgba(0, 0, 0, 0.5);
+}
+*/
+
+
+/* HOVER EFFECT */
+/*
+
+.box-1:after {
+    height: 50%;
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transform-origin: 100% 0;
+    transform: rotateZ(90deg);
+}
+
+.box-1:after {
+    top: auto;
+    bottom: 0;
+    transform-origin: 0 100%;
+    width: 100%;
+    transition: all .3s ease 0s;
+}
+
+
+/*
+
+img:hover {
+    transition: .6s;
+    transform: scale(1.4) rotate(20deg);
+    box-shadow: 2px 2px 7px rgba(0,0,0,.5);
+}
+*/
 
