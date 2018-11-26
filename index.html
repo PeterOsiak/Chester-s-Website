@@ -3,10 +3,9 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!--<link rel="stylesheet" type="text/css" href="bootstrap/css/
-    bootstrap.min.css">-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:700,900" rel="stylesheet">
     <link href="https://unpkg.com/ionicons@4.4.6/dist/css/ionicons.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Captain Claw - The Deadly Ginger</title>
@@ -18,7 +17,7 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-nav">
                 <ul id="navbar-extra">
                     <li><i class="icon ion-ios-paw"></i></li>
-                    <!-- <li><a href="#"><button>Litter box</button></a></li> -->
+                    <li><a href="#start"><button>Litter box</button></a></li>
                     <li><a href="#about"><button>About meow</button></a></li>
                     <li><a href="#meowme"><button>Meow me</button></a></li>
                     <li><a href="#contact"><button>Meowtact</button></a></li>
@@ -27,11 +26,18 @@
             </nav>
         </div>
         <div class="website-container">
-            <div class="main-header">
+            <div class="main-header" id="start">
                 <h1>Chester, the cat</h1>
                 <h3>Official website of captain claw, the deadly ginger</h3>
+                <ul>
+                    <li class="btn-header"><a href="#contact"><button>Meowtact</button></a></li>
+                    <li class="btn-header"><a href="#credentials"><button>Meowdentials</button></a></li>
+                </ul>
+                
             </div>
         </div>
+        <div>
+            <button id="scroll-btn"><p><i class="icon ion-ios-arrow-up"></i>UP</p></button></div>
     </header>
     <!-- ABOUT MEOW -->
     <div class="about-meow" id="about">
@@ -39,10 +45,10 @@
         <h2 id="litter-anchor">About Meow</h2>
         <h3 class="quotes">everything you should know about your master</h3>
             <p>
-                My name is Chester aka Captain Claw, the Deadly Ginger. I was born 4th of March 2017 in some place near Warsaw. My mom was (is) the Norsk Skogkatt (aka Norwegian Forest cat) while my dad is unknown. I like to play, sleep and eat. But most of all I like to hunt. That's why i decided to become hunter.
+                My name is Chester aka Captain Claw, the Deadly Ginger. I was born 4th of March 2017 in some place near Warsaw. My mom was (is) the Norsk Skogkatt (aka Norwegian Forest cat) while my dad is unknown. I like to play, sleep and eat. But most of all I like to hunt. That's why i decided to become a professional hunter.
             </p>
             <p>
-                If you have trouble with annoying instects, vicious earthworms and nasty boiled vegetables, I can help you out. Trust me. I know my profession well.
+                If you have trouble with annoying instects, vicious earthworms and nasty boiled vegetables, I can help you out. Just give me a call and I will solve your problems. Trust me. I know my profession well. Check my credentials.
             </p>
         </section>
         <section>
@@ -93,32 +99,47 @@
             <h3 class="quotes">Those humans trusted me.</h3>
             <div class="container">
                 <div class="row">
+                    <!-- BOX-1 -->
                     <div class="col-sm-3 box-1">
+                        <div class="firstname"><p>Peter</p></div>
                         <img src="Content/chester/chester_col_1.jpg" alt="Picture of Chester">
                         <div class="overlay">
                             <div class="text">
-                                <p class="title">The proffesional</p>
-                                <p class="review">Chester ate my spring onion, took a poo and went to sleep. He is the best at doing nothing in particular</p>
+                                <p class="title">The "Professional"</p>
+                                <p class="review">"Chester ate my spring onion, took a poo and went to sleep. He is the best at doing nothing at all."</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 box-1">Credentials 1<img src="Content/chester/chester_col_2.jpg" alt="Picture of Chester">
+                    <!-- BOX-2 -->
+                    <div class="col-sm-3 box-1">
+                        <div class="firstname"><p>Joanna</p></div>
+                        <img src="Content/chester/chester_col_2.jpg" alt="Picture of Chester">
                         <div class="overlay">
                             <div class="text">
-                                <p class="title">He's Amazing</p>
+                                <p class="title">He's incredible...</p>
+                                <p class="review">" ...at eating from the sink. He mostly meow on it's pray. And he ate my cheese! He's totaly useless."</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 box-1">Credentials 1<img src="Content/chester/chester_col_3.jpg" alt="Picture of Chester">
+                    <!-- BOX-3 -->
+                    <div class="col-sm-3 box-1">
+                        <div class="firstname"><p>Eiliv</p></div>
+                        <img src="Content/chester/chester_col_3.jpg" alt="Picture of Chester">
                         <div class="overlay">
                             <div class="text">
-                                <p class="title">Ginger death</p></div>
+                                <p class="title">Ginger death</p>
+                                <p class="review">"Destroyed litter box and ate something from the floor. After that he took a poo and fall asleep."</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm-3 box-1">Credentials 1<img src="Content/chester/chester_col_4.jpg" alt="Picture of Chester">
+                    <div class="col-sm-3 box-1">
+                        <div class="firstname"><p>Ludwika</p></div>
+                        <img src="Content/chester/chester_col_4.jpg" alt="Picture of Chester">
                         <div class="overlay">
                             <div class="text">
-                                <p class="ttitle">The best. period</p></div>
+                                <p class="title">The best. period</p>
+                                <p class="review">"Fast, agile, smart and deadly...to what i had on my plate. he's like disease."</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,5 +159,6 @@
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 </body>
 </html>
