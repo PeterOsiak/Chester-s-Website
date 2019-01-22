@@ -1,4 +1,5 @@
 /***** GENERAL SETTINGS *****/
+
 * {
     margin: 0;
     padding: 0;
@@ -237,8 +238,17 @@ a button:active {
 .icon {
 	font-size: 2rem;
 	color: #f2f2f2;
-	margin: 5px;
+/*	margin: 5px;*/
 }
+/*
+
+i.icon.ion-ios-paw {
+    float: left;
+    position: absolute;
+    left: 4%;
+    display: block;
+}
+*/
 
 .meowtact .icon {
 	font-size: 7rem;
@@ -316,6 +326,13 @@ nav a {
 
 .bg-light {
 	background-color: transparent!important;
+}
+
+/* ==Mobile nav== */
+.mobile-nav-icon {
+    float: right;
+    cursor: pointer;
+    display: none;
 }
 
 /**** MAIN PAGE ****/
