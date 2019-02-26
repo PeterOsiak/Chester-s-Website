@@ -178,7 +178,7 @@
 } 
 
 /* SCREEN WITH WIDTH BETWEEN 577 AND 768 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
     
     /* ==General== */
     .quotes {
@@ -187,6 +187,7 @@
     
     .header-container {
         height: 100vh;
+        position: relative;
     }
     
     .website-container h3 {
@@ -206,6 +207,41 @@
     
     .main-header {
         padding-top: 6rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    /* ==Mobile nav== */
+    .mobile-nav-icon {
+        display: block;
+    }
+    
+    #navbar-extra {
+        float: left;
+        margin: auto 2%;
+        display: none;
+    }
+    
+    
+    #navbar-extra li{
+        display: block;
+    }
+    
+    #navbar-extra li:link 
+    #navbar-extra li:visited {
+        display: block;
+    }
+    
+    .navbar-nav {
+        flex-direction: unset;
+    }
+    
+    .navbar {
+        align-items: unset;
     }
     
     /* ==Meowtact== */
@@ -229,8 +265,8 @@
     }
     
     .meowdentials .col-sm-3 {
-        height: 270px;
-        max-width: 151px;
+        height: 260px;
+        max-width: 140px;
     }
     
     .firstname p {
@@ -243,7 +279,6 @@
         padding: 6px;
     }
    
-
 } 
 
 /* SCREEN WITH WIDTH BETWEEN 577 AND 625 */
@@ -299,42 +334,74 @@
     p {
         font-size: 1rem;
     }
-    
+
     .quotes {
         font-size: 105%;
+        font-size: 115%;
+        letter-spacing: 5px;
     }
-    
-    /* == Main header == */
     
     .header-container {
         height: 100vh;
     }
     
     h3 {
-        font-size: 4rem;
+        font-size: 400%;
     }
     
     h2 {
-        font-size: 350%;
+        font-size: 270%;
+        letter-spacing: 4px;
     }
     
     .website-container h3 {
     font-size: 100%;
     }
+
+    /* ==Main Header== */
+
+     .main-header {
+        text-align: center;
+    }
     
     /* ==Meowtact== */
     
-    .quotes {
-        font-size: 115%
-    }
     
     .meowtact .meowtact-data {
-        font-size: 13px;
+        font-size: 1rem;
     }
     
-    .row {
-        max-width: 90%;
+     .col-lg-4 {
+        padding: 0px;
+        width: 100%;
     }
+    
+    .col-lg-4:after {
+        display: block;
+        height: 1px;
+        width: 150px;
+        background-color: #f2f2f2;
+        content: " ";
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    
+    #post:after {
+    display: none;
+    }
+    
+    .meowtact .row {
+        max-width: 100%;
+    }
+    
+    .container {
+        height: auto;
+    }
+    
+    .meowtact .icon {
+        font-size: 5rem;
+    }
+    
     
     /* ==Meowdentials== */
     
@@ -349,10 +416,6 @@
         top: 70px;
     }
     
-    .meowtact .meowtact-data {
-        font-size: 13px;
-    }
-    
     .meowtact .row {
         max-width: 90%;
     }
@@ -364,14 +427,61 @@
 
 }
 
-/* SCREEN WITH MAXIMUM WIDTH 360PX */
-@media only screen and (max-width: 360px)
+/* SCREEN WITH MAXIMUM WIDTH 375PX */
+@media only screen and (max-width: 376px) {
     
+    /* == Main header == */
+
+    .btn-header a button {
+        font-size: 0.9rem;
+        margin: 10px 4px;
+        padding: 10px;
+    }
+    
+}
+
+/* SCREEN WITH MAXIMUM WIDTH 360PX */
+@media only screen and (max-width: 360px) {
+    
+    /* == General == */
+    
+
     .quotes {
-        font-size: 110%;
+        font-size: 1rem;
         margin-top: 45px;
+        max-width: 90%;
         }
 
     h2 {
-        font-size: 290%;
+        font-size: 225%;
+        letter-spacing: 2px;
     }
+    
+    p {
+    font-size: 15px;
+    }
+    
+    /* == Navbar == */
+    #navbar-extra {
+        margin: 8%;
+    }
+    
+    /* == Main header == */
+    
+    .btn-header a button {
+        font-size: 0.8rem;
+        margin: 10px 4px;
+        padding: 10px;
+    }
+    
+    /* == Meowdentials == */
+    
+    .meowdentials .col-sm-3 {
+        margin-top: 1.5px;
+    }
+    
+}
+
+@media only screen and (max-width: 320px) {
+
+}
